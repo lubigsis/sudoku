@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    text-align: center;
+}
+h1{
+    letter-spacing: 2px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    padding: 20px;
+    color: rgb(178, 6, 178);
+    font-size: 32px;
+}
+
+span{
+    color: purple;
+    font-size: 35px;
+}
+
+hr {
+    width: 500px;
+    margin: auto;
+}
+
+.errores {
+    color: rgb(40, 36, 34);
+    margin: 15px;
+    letter-spacing: 2px;
+}
+
+/*------------------------------------------------------------------------JS---------------------*/
+.tablero {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ficha {
+    width: 48px; 
+    height: 48px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.digitos {
+    width: 450px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.number {
+    width: 44px; 
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.number-selected {
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+}
+
+.ficha-start {
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+}
