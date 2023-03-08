@@ -27,3 +27,36 @@ let solucion = [
     "675832941",
     "812945763"
 ]
+
+//--------------------------------------------------------FUNCIONES-------------------------------------------
+
+function setGame() {
+//-------------------------------------------- creo los dígitos  del 1 al 9--------------
+    for (let i = 1; i <= 9; i++) {
+//------------------------------------<div id="1" class="numbero">1</div>
+        let numero = document.createElement('div');
+        numero.id = i;
+        numero.innerText = i;
+        numero.classList.add('numero');
+        document.getElementById('digitos').appendChild(numero);
+    }
+//------------------------------------imprimo el tablero----------------------------------
+
+for (let r = 0; r < 9; r++) {
+
+    for (let c = 0; c < 9; c++) {
+
+        let ficha = document.createElement("div");
+        ficha.id = r.toString() + "-" + c.toString();
+        ficha.classList.add("ficha");
+        document.getElementById("tablero").append(ficha);
+    }
+  }
+};
+
+
+//------------------------------------------------------------------------------------------------------------
+
+window.onload = function() {
+    setGame()
+};

@@ -34,17 +34,18 @@ hr {
 
 /*------------------------------------------------------------------------JS---------------------*/
 .tablero {
-    width: 450px;
-    height: 450px;
+    width: 433px;
+    height: 434px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(232, 203, 221);
 }
 
 .ficha {
     width: 48px; 
     height: 48px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(254, 250, 250);
     font-size: 20px;
     font-weight: bold;
     display: flex;
@@ -60,9 +61,10 @@ hr {
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
+ /*   background-color: yellow;*/
 }
 
-.number {
+.numero {
     width: 44px; 
     height: 44px;
     border: 1px solid black;
