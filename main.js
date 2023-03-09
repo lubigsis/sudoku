@@ -37,9 +37,19 @@ function setGame() {
         let numero = document.createElement('div');
         numero.id = i;
         numero.innerText = i;
+        numero.addEventListener('click', selectNumero);
         numero.classList.add('numero');
         document.getElementById('digitos').appendChild(numero);
     }
+
+//------------con CSS
+function selectNumero(){
+    if(numSeleccionado != null){
+        numSeleccionado.classList.remove('selectNumero');
+    }
+    numSeleccionado = this;
+    numSeleccionado.classList.add('selectNumero');
+}
 //------------------------------------imprimo el tablero----------------------------------
 
 for (let r = 0; r < 9; r++) {

@@ -77,7 +77,7 @@ hr {
     border-radius: 50px;
 }
 
-.number-selected {
+.selectNumero {
     background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
 }
 
